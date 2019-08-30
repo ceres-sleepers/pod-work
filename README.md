@@ -1,4 +1,4 @@
-[jason's 101 Exercises](hhttps://liberating-peak.glitch.me/)
+[jason's 101 Exercises](https://liberating-peak.glitch.me/)
 
 [Dani's 101 Exercises](https://ambiguous-earthquake.glitch.me/)
 
