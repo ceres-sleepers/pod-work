@@ -6,36 +6,88 @@
     </head>
     <body>
     <script>
-    // 1) Make a function called returnTwo() that returns the number 2 when called
-    // ---Test this function with console.log(returnTwo())
-    function returnTwo(num) {
-        num = 2;
-        return num;
-    }
-console.log(returnTwo());
+//     // 1) Make a function called returnTwo() that returns the number 2 when called
+//     // ---Test this function with console.log(returnTwo())
+//     function returnTwo(num) {
+//         num = 2;
+//         return num;
+//     }
+// console.log(returnTwo());
+//
+// function returnName(name) {
+//     name = "kyndall sims";
+//     return name;
+// }
+// console.log(returnName(name));
+// // 3) Make a function called addThree() which takes in a number input and returns the number plus 3.
+// // ---Test this function with console.log(addThree(5))
+//
+// function addThree(num) {
+//     return num + 3;
+// }
+// console.log(addThree(5));
+//
+// // 1. Write a JavaScript function that reverse a number. from w3resource
+// function reverseString(str) {
+//     var splitString = str.split("");
+//     var reverseArray = splitString.reverse();
+//     var joinArray = reverseArray.join("");
+//     return joinArray;
+// }
+// console.log(reverseString("racecar"));
 
-function returnName(name) {
-    name = "kyndall sims";
-    return name;
-}
-console.log(returnName(name));
-// 3) Make a function called addThree() which takes in a number input and returns the number plus 3.
-// ---Test this function with console.log(addThree(5))
 
-function addThree(num) {
-    return num + 3;
-}
-console.log(addThree(5));
+// Found on CODEWARS
+//Task: Given an integral number, determine if it's a square number:
 
-// 1. Write a JavaScript function that reverse a number. from w3resource
-function reverseString(str) {
-    var splitString = str.split("");
-    var reverseArray = splitString.reverse();
-    var joinArray = reverseArray.join("");
-    return joinArray;
-}
-console.log(reverseString("racecar"));
 
-</script>
+// WEEK 8 POD DELIVERABLE----------------------------------------------------------------------------------------
+
+var isSquare = function(n){
+    return Math.sqrt(n) % 1 === 0;
+};
+
+
+//Found on FREECODECAMP
+//Task: Use arrow function syntax to compute the square of only the positive integers (decimal numbers are not integers) in the array realNumberArray and store the new array in the variable squaredIntegers.
+
+const realNumberArray = [4, 5.6, -9.8, 3.14, 42, 6, 8.34, -2];
+const squareList = (arr) => {
+    "use strict";
+    // change code below this line
+    const squaredIntegers = arr.filter( (num) => num > 0 && num % parseInt(num) === 0 ).map( (num) => Math.pow(num, 2) );
+    // change code above this line
+    return squaredIntegers;
+};
+const squaredIntegers = squareList(realNumberArray);
+console.log(squaredIntegers);
+
+
+// Found on FREECODECAMP
+//Task: Modify the function increment by adding default parameters so that it will add 1 to number if value is not specified.
+
+const increment = (function() {
+    "use strict";
+    return function increment(number, value = 1) {
+        return number + value;
+    };
+})();
+console.log(increment(5, 2)); // returns 7
+console.log(increment(5)); // returns NaN
+
+// From 101 functions
+// Task: refactor to es6 syntax
+
+//  Exercise 1
+let onMarsRightNow = false;
+
+// Exercise 11
+const addOne  = (num) => num + 1;
+
+// Exercise 16
+const identity = (input) => input;
+
+
+    </script>
 </body>
 </html>
